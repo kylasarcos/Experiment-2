@@ -1,0 +1,31 @@
+//This program is the solution for #6
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int first, second, count, value, x[20];
+    first = 0;
+    second = 1;
+    x[0] = 1;
+    x[1] = 2;
+    
+    cout << first  << ", ";
+    cout << second << ", ";
+    for (count = 2; count < 20; count++)
+    {
+        x[count] = x[count - 2] + x[count - 1];
+    }
+    
+    for (value = 0; value < 20; value++)
+    {
+        cout << x[value];
+        if (value == 20) {
+            break;
+        }
+        
+        else
+            cout << ", ";
+    }
+}
