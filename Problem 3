@@ -46,17 +46,11 @@ int main()
 				cout << setprecision(2) << fixed;
 				cout  << "V = " << v;
 			}
-			else if (y > 5) {
-				v = x - sqrt(y/z);
+			else {
+			    v = x - sqrt(y/z);
 				cout << setw(10);
 				cout << setprecision(2) << fixed;
 				cout  << "V = " << v;
-			}
-			else {
-			    v = x + y + z;
-			    cout << setw(10);
-			    cout << setprecision(2) << fixed;
-			    cout  << "V = " << v;
 			}
 			break;
 			
