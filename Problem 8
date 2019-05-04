@@ -1,0 +1,22 @@
+// This program is the solution for #8
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int multiplicand, multiplier, product;
+	
+	cout << "Enter a number: ";
+	cin >> multiplier;
+	cout << "Multiplication table of " << multiplier << ": \n";
+	
+	multiplicand = 1;
+	while (multiplicand <= 10)
+	{
+		cout << multiplicand << " * " << multiplier << " = " << multiplicand * multiplier << "\n";
+		multiplicand++;
+	}
+	
+	return 0;
+}
