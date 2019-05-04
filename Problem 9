@@ -1,0 +1,25 @@
+// This program is the solution for #9
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int row, column, countRow, countColumn;
+    
+    cout << "How many rows: ";
+    cin >> row;
+    cout << "How many columns: ";
+    cin >> column;
+    
+    for (countRow = 0; countRow < row; countRow++)
+    {
+        for (countColumn = 0; countColumn < column; countColumn++)
+        {
+            cout << "*";
+        }
+        
+        cout << endl;
+    }
+}
