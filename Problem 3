@@ -1,0 +1,72 @@
+// This program is the solution for #3
+
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+	int x, y;
+	double v;
+	const double z = 2.5;
+	
+	cout << "Input value of x: ";
+	cin >> x;
+	cout << "Input value of y: ";
+	cin >> y;
+	
+	switch (x)
+	{
+		case 1:
+			if (y > 1 && y < 5) {
+				v = x * y * z;
+				cout << setw(10);
+				cout << setprecision(2) << fixed;
+				cout << "V = " << v;
+			}
+			else if (y >= 5) {
+				v = x + (y/z);
+				cout << setw(10);
+				cout << setprecision(2) << fixed;
+				cout  << "V = " << v;
+			}
+			else {
+			    v = x + y + z;
+			    cout << setw(10);
+			    cout << setprecision(2) << fixed;
+			    cout  << "V = " << v;
+			}
+			break;
+		
+		case 2:
+			if (y <= 5) {
+				v = abs((x-y)/z);
+				cout << setw(10);
+				cout << setprecision(2) << fixed;
+				cout  << "V = " << v;
+			}
+			else if (y > 5) {
+				v = x - sqrt(y/z);
+				cout << setw(10);
+				cout << setprecision(2) << fixed;
+				cout  << "V = " << v;
+			}
+			else {
+			    v = x + y + z;
+			    cout << setw(10);
+			    cout << setprecision(2) << fixed;
+			    cout  << "V = " << v;
+			}
+			break;
+			
+		default:
+			v = x + y + z;
+			cout << setw(10);
+			cout << setprecision(2) << fixed;
+			cout  << "V = " << v;
+			break;
+	}
+		
+	return 0;
+}
