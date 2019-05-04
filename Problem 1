@@ -9,7 +9,7 @@ int main()
 	char sub;
 	float hrs, bill;
 	
-	cout << "Input the tpe of package you have purchased (A-C): ";
+	cout << "Input the type of package you have purchased (A-C): ";
 	cin >> sub;
 	
 	switch (sub)
