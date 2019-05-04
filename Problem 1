@@ -1,7 +1,6 @@
 // This program is the solution for #1
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main()
