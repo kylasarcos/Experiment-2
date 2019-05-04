@@ -1,0 +1,54 @@
+// This program is the solution for #1
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	char sub;
+	float hrs, bill;
+	
+	cout << "Input the tpe of package you have purchased (A-C): ";
+	cin >> sub;
+	
+	switch (sub)
+	{
+    case 'a':
+		case 'A':
+			cout << "Number of hours the package was used: ";
+			cin >> hrs;
+				if (hrs <= 10)
+					cout << "Your bill is: P995";
+				else {
+					bill = 995 + ((hrs-10) * 20);
+						cout << "Your bill is: P" << bill;
+				}
+			break;
+		
+    case 'b':
+		case 'B':
+			cout << "Number of hours the package was used: ";
+			cin >> hrs;
+				if (hrs <= 20)
+					cout << "Your bill is: P1495";
+				else {
+					bill = 1495 + ((hrs-20) * 10);
+						cout << "Your bill is: P" << bill;
+				}
+			break;
+		
+    case 'c':
+		case 'C':
+			cout << "Number of hours the package was used: ";
+			cin >> hrs;
+				bill = 1995;
+				cout << "Your bill is: P" << bill;
+			break;
+		
+		default:
+			cout << "Invalid package";
+	}
+	
+	return 0;
+}
