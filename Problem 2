@@ -1,0 +1,44 @@
+// This program is the solution for #2
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{
+	double bill, demandCharge, consumptionCharge, gallon, lateGallon, balance, lateCharge;
+	int answer;
+	demandCharge = 35;
+	consumptionCharge = 1.10;
+	lateCharge = 20;
+	
+	cout << "Do you have unpaid balance? (Press 1 for yes and 2 for no): ";
+	cin >> answer;
+	
+	switch (answer)
+	{
+		case 1:
+			cout << "Input the number of gallons consumed from last month/s: ";
+			cin >> lateGallon;
+			cout << "Input the number of gallons consumed this month: ";
+			cin >> gallon;
+			
+			bill = demandCharge + ((lateGallon + gallon) * consumptionCharge);
+			balance = lateCharge + bill;
+			cout << "Your water bill costs P" << balance << " in total (which includes the late fee of P20).";
+			break;
+			
+		case 2:
+			cout << "Input the number of gallons consumed this month: ";
+			cin >> gallon;
+			
+			bill = demandCharge + (gallon * consumptionCharge);
+			cout << "Your water bill costs P" << bill << " in total.";
+			break;
+			
+		default:
+			cout << "Rerun the program and input the correct number (1 for yes 2 for no)";
+	}
+	
+	return 0;
+}
