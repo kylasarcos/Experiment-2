@@ -1,0 +1,30 @@
+// This program is the solution for #4
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int first, second, third;
+	
+	cout << "Enter first number: ";
+	cin >> first;
+	cout << "Enter second number: ";
+	cin >> second;
+	cout << "Enter third number: ";
+	cin >> third;
+	
+	if (first > second && first > third)
+		cout << "The LARGEST of the three numbers is " << first << ".";
+	else if (second > first && second > third) {
+		cout << "The LARGEST of the three numbers is " << second << ".";
+	}
+	else if (third > first && third > second) {
+		cout << "The LARGEST of the three numbers is " << third << ".";
+	}
+	else {
+		cout << "All numbers are EQUAL.";
+	}
+	
+	return 0;
+}
