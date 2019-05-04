@@ -1,0 +1,33 @@
+// This program is the solution for #7
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+	int number, digit, sum;
+	
+ 	do
+	{
+		cout << "Enter a number: ";
+		cin >> number;
+		
+		sum = 0;
+        for (digit = 0; digit <= number; digit++)
+	    {
+	       	sum += digit;
+	    }
+        
+        if (number > 0) {
+    	cout << "The sum of all whole numbers from 1 to " << number << " is "<< sum << ". \n";
+		}
+    	
+    	else
+   			cout << "Thank you!";
+
+	} while (number > 0);
+	
+	
+	return 0;
+
+}
